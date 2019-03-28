@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+			}
+			#inner3{
+				/* position: fixed; */
+				background: yellow;
+				left: 60px;
+				top: 30px;
+			}
+			#inner2{
+				position: relative;
+				background: hotpink;
+				left: 80px;
+				top: 70px;
+			}
+			#inner1{
+				position: fixed;
+				background: deeppink;
+				left: 50px;
+				top: 150px;
+			}
+			#wrap{
+				position: absolute;
+				background: pink;
+				left: 100px;
+				top: 50px;
+			}
+		</style>
+	</head>
+	<body id="body">
+		<div id="wrap">wrap
+			<div id="inner1">inner1
+				<div id="inner2">inner2
+					<div id="inner3">inner3</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			console.log(inner3.offsetLeft, inner3.offsetTop)
+		}
+	</script>
+</html> 
