@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+            border: 10px solid;
+            margin: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">wrap</div>
+<script>
+    var wrap = document.querySelector("#wrap")
+    //padding box (可视区域)
+    console.log(wrap.clientWidth,wrap.clientHeight)
+    //padding box + border
+    console.log(wrap.offsetWidth,wrap.offsetHeight)
+</script>
+</body>
+</html>

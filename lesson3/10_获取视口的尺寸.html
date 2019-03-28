@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #html{
+            margin: 50px;
+        }
+        #wrap{
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+            border: 10px solid;
+            margin: 60px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="wrap">wrap</div>
+<script>
+    var w = document.documentElement.clientWidth
+    var h = document.documentElement.clientHeight
+    var ow = document.documentElement.offsetHeight
+    var oh = document.documentElement.offsetWidth
+    console.log(w,h)
+    console.log(ow,oh)
+</script>
+</body>
+</html>
